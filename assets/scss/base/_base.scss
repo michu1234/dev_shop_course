@@ -1,0 +1,34 @@
+@import '../helpers/placeholders';
+@import '../helpers/variables';
+@import '../helpers/mixins/clearfix';
+@import '../helpers/mixins/list-reset';
+@import '../helpers/mixins/responsive';
+
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('../fonts/Lato-Bold.ttf');
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Lato';
+    background-color: $pure-white;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+p {
+    font-size: 3rem;
+}

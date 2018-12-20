@@ -1,0 +1,50 @@
+%text--center {
+    text-align: center;
+}
+
+%uppercase {
+    text-transform: uppercase;
+}
+
+%box--center {
+    margin: 0 auto;
+}
+
+%flex {
+    display: flex;
+}
+
+%inline-block {
+    display: inline-block;
+  }
+
+%absolute {
+    position: absolute;
+}
+
+%relative {
+    position: relative;
+}
+
+%pointer {
+    cursor: pointer;
+}
+
+%transition {
+    transition: all 0.3s;
+}
+  
+%border-radius {
+    border-radius: 5px;
+  }
+
+%vhidden {
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+  }
