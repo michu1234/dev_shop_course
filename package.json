@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "debucsser": "^1.0.4"
+    "debucsser": "^1.0.4",
+    "tailwindcss": "^0.7.3"
   }
 }
