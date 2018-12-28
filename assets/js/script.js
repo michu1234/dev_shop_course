@@ -1,4 +1,5 @@
 import '../scss/main.scss'
+import { tween } from 'popmotion';
 import Debucsser from 'debucsser';
 
 const config = {
