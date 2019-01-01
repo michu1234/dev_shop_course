@@ -10,55 +10,60 @@ html(lang="en")
   
         header
             .container
-                h1 Lorem ipsum dolor sit.
-                p Lorem, ipsum dolor:
-                ul
-                    li Lorem ipsum dolor sit amet.
-                    li Nulla exercitationem corporis tempore id?
-                    li Sed distinctio ab in mollitia?
-                button  Buy Access
+                .header__title
+                    h1 CLEAR VALUE FOR YOUR TARGET CUSTOMER
+                    p What you’ll learn:
+                    ul
+                        li First thing that you’ll learn
+                        li Second thing that you’ll learn
+                        li Third thing that you’ll learn
+                    button.btn.btn--light  Buy Access
                 .header__details 
                     span 44$
                     p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque rerum odit pariatur autem, perferendis iste. Consequatur nihil voluptates placeat.
 
 
         section.about
-            h2 About course
-            .about__details
-                .about__video
-                .about__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eius porro non veniam quo consequuntur, voluptatibus voluptatem minus commodi possimus.
-            .about__score Lorem ipsum dolor sit amet consectetur.
+            .container
+                h2 About course
+                .divider.divider--gray
+                .about__details
+                    .about__video
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VjnTS7JphVE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    .about__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eius porro non veniam quo consequuntur, voluptatibus voluptatem minus commodi possimus.
+                .about__score Our students rated the course on:
 
 
         section.stats
             .container
-            .stats__item
-                i
-                h3 Lorem, ipsum.
-                p Lorem ipsum dolor sit amet consectetur.
-            .stats__item
-                i
-                h3 Laborum, accusantium?
-                p Labore facilis at inventore voluptatibus unde.
-            .stats__item
-                i
-                h3 Expedita, inventore?
-                p Officiis sed vero praesentium nemo odio.
+                .stats__item
+                    i
+                    h3 6 lessons
+                    p Add a description of your offer and key benefits
+                .stats__item
+                    i
+                    h3 80 hours
+                    p Add a description of your offer and key benefits
+                .stats__item
+                    i
+                    h3 2 levels
+                    p Add a description of your offer and key benefits
 
 
         section.teachers
+            .container
+                h2 Teachers
+                .teachers__person
+                    .teachers__img
+                    .teachers__description
+                        h3 Name, Designer at Company
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sint vel delectus recusandae ad accusamus ea sed porro dolores deserunt.
 
-            .teachers__person
-                .teachers__img
-                .teachers__description
-                    h3 Lorem, ipsum dolor.
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sint vel delectus recusandae ad accusamus ea sed porro dolores deserunt.
-
-            .teachers__person
-                .teachers__img
-                .teachers__description
-                    h3 Lorem, ipsum dolor.
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sint vel delectus recusandae ad accusamus ea sed porro dolores deserunt.
+                .teachers__person
+                    .teachers__img
+                    .teachers__description
+                        h3 Name, Designer at Company
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sint vel delectus recusandae ad accusamus ea sed porro dolores deserunt.
 
 
         section.benefits
@@ -67,28 +72,28 @@ html(lang="en")
                 .benefits__items
                     .benefits__item
                         i
-                        h3 Lorem, ipsum.
+                        h3 Benefit 1
                         p Lorem ipsum dolor sit, amet consectetur adipisicing.
                     .benefits__item
                         i
-                        h3 Optio, ullam.
+                        h3 Benefit 2
                         p Quae culpa odit obcaecati amet ab veniam!
                     .benefits__item
                         i
-                        h3 Repellat, quod?
+                        h3 Benefit 3
                         p A dolorum, nostrum vero soluta illum minima.
+                button.btn.btn--dark Buy access
 
-                button Buy access
 
         section.social
             .container
                 h3 Social proof
                 .social__testimonials
                 .social__testimonial
-                    h4 Lorem, ipsum dolor.
+                    h4 Name, Designer at Company
                     p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae aut consequatur tempora autem nihil esse error nam cupiditate vel? Corporis numquam sint et quisquam, consequatur eaque veniam? Laudantium sunt, blanditiis voluptatibus a nam facere, temporibus animi debitis non magnam veritatis.
                 .social__testimonial
-                    h4 Sunt, nobis culpa.
+                    h4 Name, Designer at Company
                     p Rem libero quam ab aperiam! Voluptatum maiores eaque autem dicta nostrum. Libero amet, commodi officiis illum, soluta aspernatur quidem at minus dolor asperiores odit quo. Deleniti exercitationem iure incidunt, pariatur doloribus mollitia, voluptatum ad neque laborum, vero possimus modi quaerat.
         
         section.summary
@@ -96,15 +101,15 @@ html(lang="en")
                 .summary__details
                     .summary__description
                         h5 Marketing Course
-                        h2 Lorem ipsum dolor sit amet.
-                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsa esse velit minima at reprehenderit, dolores incidunt autem officia, id ipsum, ullam accusamus?
+                        h2 CLEAR VALUE FOR YOUR TARGET CUSTOMER
+                        p #{locals.tekst}
                     .summary__cost
                         .summary__price 44$
                         p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam suscipit illo eos ex atque quisquam rerum ipsum quis exercitationem nemo.
-                        button Buy access
+                        button.btn.btn--dark Buy access
         
         footer
-        
+
 
 
 

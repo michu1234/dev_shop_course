@@ -4513,15 +4513,177 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\font\\Lato-Regular.ttf":[["Lato-Regular.3f67b3af.ttf","assets/font/Lato-Regular.ttf"],"assets/font/Lato-Regular.ttf"],"./..\\font\\Lato-Bold.ttf":[["Lato-Bold.4e9c1c36.ttf","assets/font/Lato-Bold.ttf"],"assets/font/Lato-Bold.ttf"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/js/index.js":[function(require,module,exports) {
+},{"./..\\font\\Lato-Regular.ttf":[["Lato-Regular.3f67b3af.ttf","assets/font/Lato-Regular.ttf"],"assets/font/Lato-Regular.ttf"],"./..\\font\\Lato-Bold.ttf":[["Lato-Bold.4e9c1c36.ttf","assets/font/Lato-Bold.ttf"],"assets/font/Lato-Bold.ttf"],"./..\\img\\asset4.jpeg":[["asset4.fe346336.jpeg","assets/img/asset4.jpeg"],"assets/img/asset4.jpeg"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/debucsser/debucsser.js":[function(require,module,exports) {
+var global = arguments[3];
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+class Debucsser {
+  constructor(props) {
+    this.config = props || {};
+    this.color = this.config.color || 'palevioletred';
+    this.width = this.config.width || '3px';
+    this.style = this.config.style || 'solid';
+    this.customClass = this.config.customClass || null;
+    this.grayscaleOnDebug = this.config.grayscaleOnDebug || false;
+    this.grayscaleOnDebugAll = this.config.grayscaleOnDebugAll || false;
+    this.string = `${this.width} ${this.style} ${this.color}`;
+    this.mainKey = this.config.mainKey || 17;
+    this.secondKey = this.config.secondKey || 16;
+    this.init = this.init.bind(this);
+    this.debug = this.debug.bind(this);
+    this.debugAll = this.debugAll.bind(this);
+    this.stop = this.stop.bind(this);
+    this.addClass = this.addClass.bind(this);
+    this.labels = this.labels.bind(this);
+    this.createGlobalClass = this.createGlobalClass.bind(this);
+    this.removeGlobalClass = this.removeGlobalClass.bind(this);
+  }
+
+  init() {
+    // initialize invisible label element => we'll make it visible on selected keystroke
+    this.label = document.createElement('div');
+    this.label.classList.add('debucsser-label');
+    this.label.style = 'display: none;';
+    document.body.appendChild(this.label);
+    this.inject_label_style();
+    this.createDebugStyle();
+    this.debug();
+    this.globalStyle = this.createGlobalClass();
+  }
+
+  debug() {
+    document.addEventListener('keydown', key => {
+      if (key.keyCode == this.mainKey) {
+        document.addEventListener('mousemove', this.labels, true);
+        document.addEventListener('mouseover', this.addClass, true);
+        document.addEventListener('keydown', this.debugAll, true);
+      }
+
+      this.stop();
+    });
+  }
+
+  stop() {
+    document.addEventListener('keyup', key => {
+      if (key.keyCode == this.mainKey) {
+        document.removeEventListener('mouseover', this.addClass, true);
+        document.removeEventListener('mousemove', this.labels, true);
+        this.label.style = 'display: none;';
+      }
+    });
+  }
+
+  addClass(over) {
+    over.target.classList.add(this.customClass ? this.customClass : 'debucsser');
+    document.addEventListener('mouseout', out => {
+      out.target.classList.remove(this.customClass ? this.customClass : 'debucsser');
+    }, true);
+  }
+
+  debugAll(key) {
+    if (key.keyCode == this.secondKey) {
+      document.body.appendChild(this.globalStyle);
+      document.addEventListener('keyup', this.removeGlobalClass, true);
+    }
+  }
+
+  createDebugStyle() {
+    const style = document.createElement('style');
+    style.innerHTML = `
+      .debucsser {
+        outline: ${this.string};
+        ${this.config.grayscaleOnDebug && 'filter: grayscale(100%);'}
+      }
+    `;
+    document.body.appendChild(style);
+  }
+
+  createGlobalClass() {
+    const global = document.createElement('style');
+    global.innerHTML = `
+      * {
+        outline: ${this.string};
+        ${this.config.grayscaleOnDebugAll && 'filter: grayscale(100%);'}
+      }
+    `;
+    return global;
+  }
+
+  removeGlobalClass(key) {
+    if (key.keyCode == this.secondKey) {
+      document.body.removeChild(this.globalStyle);
+    }
+  }
+
+  labels(e) {
+    if (e.target) {
+      const classList = e.target.classList ? e.target.classList.value.replace('debucsser', '') : undefined;
+      const id = e.target.id ? '#' + e.target.id : undefined;
+      const dimensions = e.target.getBoundingClientRect();
+      this.label.innerHTML = `
+        <h2>class: <strong>${classList || `¯\\_(ツ)_/¯`}</strong></h2>
+        <h2>id: <strong>${id || `¯\\_(ツ)_/¯`}</strong></h2>
+        <h2><strong>${dimensions.width.toFixed(0)}px</strong> × <strong>${dimensions.height.toFixed(0)}px</strong></h2>
+      `;
+      this.label.style = `display: block; top:${e.clientY + 20}px; left:${e.clientX + 20}px;`;
+    } else {
+      this.label.style = 'display: none;';
+    }
+  }
+
+  inject_label_style() {
+    const style = document.createElement('style');
+    style.innerHTML = `
+      .debucsser-label {
+        position: fixed;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        padding: 10px 20px;
+        background: #333;
+        border-radius: 3px;
+        color: #f9f9f9;
+        opacity: 0.9;
+        z-index: 999;
+      }
+      .debucsser-label strong {
+        color: palevioletred;
+      }
+    `;
+    document.body.appendChild(style);
+  }
+
+}
+
+exports.default = Debucsser;
+},{}],"assets/js/index.js":[function(require,module,exports) {
 "use strict";
 
 var _popmotion = require("popmotion");
 
 require("../sass/main.sass");
 
-var arr = [1, 2, 3, 4, 5, 55];
-},{"popmotion":"node_modules/popmotion/dist/popmotion.es.js","../sass/main.sass":"assets/sass/main.sass"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+var _debucsser = _interopRequireDefault(require("debucsser"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// pass all the custom properties you want
+var config = {
+  color: 'palevioletred',
+  // color of the outline
+  width: '1px',
+  // width of the outline
+  grayscaleOnDebugAll: false,
+  // apply grayscale filter to every element 
+  customClass: 'exampleClass' // a class existent in your stylesheet
+  // init the debugger
+
+};
+var debug = new _debucsser.default(config).init();
+},{"popmotion":"node_modules/popmotion/dist/popmotion.es.js","../sass/main.sass":"assets/sass/main.sass","debucsser":"node_modules/debucsser/debucsser.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -4548,7 +4710,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53247" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64207" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

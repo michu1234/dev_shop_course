@@ -1,0 +1,28 @@
+
+@import './helpers/placeholders'
+@import './helpers/variables'
+@import './helpers/mixins/list-reset'
+@import './helpers/mixins/responsive'
+
+.btn
+    border: none
+    border-radius: 4px
+    color: $pure-white
+    padding: 8px
+    font-size: 1.8rem
+    font-weight: 700
+    line-height: 1.3
+    width: 195px
+    height: 51px
+    text-decoration: none
+    text-align: center
+    @extend %pointer
+
+    &--light
+        background-color: $gold-yellow
+
+    &--dark 
+        background-color: $hell-black
+
+    &:hover
+        background-color: $bird-yellow
