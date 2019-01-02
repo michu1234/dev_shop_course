@@ -389,7 +389,7 @@ template {
 [hidden] {
   display: none; }
 
-header .container, .about__details {
+.about__details, header .container, .stats .container {
   display: flex; }
 
 .btn {
@@ -444,13 +444,13 @@ p {
   width: 100% !important;
   margin: 0 auto; }
 
-header .container, .about__details {
+.about__details, header .container, .stats .container {
   display: flex; }
 
 .btn {
   cursor: pointer; }
 
-header .container, .about__details {
+.about__details, header .container, .stats .container {
   display: flex; }
 
 .btn {
@@ -486,6 +486,14 @@ header .container, .about__details {
   .divider--black {
     background: #000000; }
 
+.about h2 {
+  text-align: center;
+  font-size: 4.2rem; }
+
+.about__description {
+  font-size: 2rem;
+  padding: 20px; }
+
 header {
   padding-top: 360px; }
   header .container {
@@ -498,10 +506,5 @@ header {
       margin: 0;
       padding: 0; }
 
-.about h2 {
-  text-align: center;
-  font-size: 4.2rem; }
-
-.about__description {
-  font-size: 2rem;
-  padding: 20px; }
+.stats {
+  text-align: center; }
