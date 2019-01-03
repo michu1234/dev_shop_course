@@ -628,8 +628,40 @@ header {
       margin: 0;
       padding: 0; }
 
+.social h3 {
+  text-align: center;
+  font-size: 4.2rem; }
+
+.social h4 {
+  font-size: 2.4rem;
+  font-family: "Lato-Light";
+  font-weight: 300;
+  color: #f8c100; }
+
+.social p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  font-family: "Lato-Light";
+  line-height: 2.9rem;
+  color: #6a6a6a; }
+
+.social i {
+  font-size: 2.4rem; }
+
 .stats {
   text-align: center; }
+
+.summary {
+  background-color: #f8d800;
+  padding: 50px 0 30px 0; }
+  .summary h5 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 300; }
+  .summary h2 {
+    font-size: 5.2rem;
+    max-width: 520px;
+    line-height: 6.3rem; }
 
 .teachers h2 {
   text-align: center;
