@@ -11,3 +11,50 @@
         font-size: 5.2rem
         max-width: 520px
         line-height: 6.3rem
+
+    &__details
+        @extend %flex
+
+    
+    &__description
+
+        p 
+            font-size: 2.4rem
+            font-weight: 300
+            font-family: "Lato-Light"
+            line-height: 3.9rem
+        
+        img 
+            filter: contrast(300%)
+            padding-bottom: 8px
+            border-bottom: 5px dotted white
+
+    &__cost
+        background-color: $pure-white
+        border-radius: 10px
+        box-shadow: 1px 1px 55px rgba(0,0,0,0.35)
+        text-align: center
+        min-width: 400px
+        height: 456px
+
+        p 
+            font-size: 2rem
+            font-weight: 300
+            font-family: "Lato-Light"
+            line-height: 3.2rem 
+            max-width: 324px
+            width: 100%
+            margin: 0 auto 20px auto
+
+    &__price
+            font-size: 7.6rem
+            line-height: 9.9rem
+            font-weight: bold
+            border: 1px solid $gold-yellow
+            width: 150px
+            height: 150px
+            margin: 30px auto
+            border-radius: 50%
+            @extend %flex
+            justify-content: center
+            align-items: center

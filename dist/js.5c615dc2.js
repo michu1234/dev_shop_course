@@ -4513,7 +4513,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\font\\fontello.eot":[["fontello.5ba468ce.eot","assets/font/fontello.eot"],"assets/font/fontello.eot"],"./..\\font\\fontello.woff2":[["fontello.50cd5947.woff2","assets/font/fontello.woff2"],"assets/font/fontello.woff2"],"./..\\font\\fontello.woff":[["fontello.871433a6.woff","assets/font/fontello.woff"],"assets/font/fontello.woff"],"./..\\font\\fontello.ttf":[["fontello.8c712a45.ttf","assets/font/fontello.ttf"],"assets/font/fontello.ttf"],"./..\\font\\fontello.svg":[["fontello.caa62654.svg","assets/font/fontello.svg"],"assets/font/fontello.svg"],"./..\\font\\Lato-Regular.ttf":[["Lato-Regular.3f67b3af.ttf","assets/font/Lato-Regular.ttf"],"assets/font/Lato-Regular.ttf"],"./..\\font\\Lato-Bold.ttf":[["Lato-Bold.4e9c1c36.ttf","assets/font/Lato-Bold.ttf"],"assets/font/Lato-Bold.ttf"],"./..\\font\\Lato-Light.ttf":[["Lato-Light.63c34893.ttf","assets/font/Lato-Light.ttf"],"assets/font/Lato-Light.ttf"],"./..\\img\\asset4.jpeg":[["asset4.fe346336.jpeg","assets/img/asset4.jpeg"],"assets/img/asset4.jpeg"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/debucsser/debucsser.js":[function(require,module,exports) {
+},{"./..\\font\\fontello.eot":[["fontello.5ba468ce.eot","assets/font/fontello.eot"],"assets/font/fontello.eot"],"./..\\font\\fontello.woff2":[["fontello.50cd5947.woff2","assets/font/fontello.woff2"],"assets/font/fontello.woff2"],"./..\\font\\fontello.woff":[["fontello.871433a6.woff","assets/font/fontello.woff"],"assets/font/fontello.woff"],"./..\\font\\fontello.ttf":[["fontello.8c712a45.ttf","assets/font/fontello.ttf"],"assets/font/fontello.ttf"],"./..\\font\\fontello.svg":[["fontello.caa62654.svg","assets/font/fontello.svg"],"assets/font/fontello.svg"],"./..\\font\\Lato-Regular.ttf":[["Lato-Regular.3f67b3af.ttf","assets/font/Lato-Regular.ttf"],"assets/font/Lato-Regular.ttf"],"./..\\font\\Lato-Bold.ttf":[["Lato-Bold.4e9c1c36.ttf","assets/font/Lato-Bold.ttf"],"assets/font/Lato-Bold.ttf"],"./..\\font\\Lato-Light.ttf":[["Lato-Light.63c34893.ttf","assets/font/Lato-Light.ttf"],"assets/font/Lato-Light.ttf"],"./..\\img\\women.jpg":[["women.95abbc42.jpg","assets/img/women.jpg"],"assets/img/women.jpg"],"./..\\img\\mark.png":[["mark.8af38237.png","assets/img/mark.png"],"assets/img/mark.png"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/debucsser/debucsser.js":[function(require,module,exports) {
 var global = arguments[3];
 "use strict";
 
@@ -4710,7 +4710,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55443" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55467" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
