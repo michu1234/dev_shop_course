@@ -2,12 +2,21 @@ header
     background-image: url("../img/women.jpg")
     background-attachment: fixed;
     background-repeat: no-repeat
-    background-position: 100% 0
+    background-position: 10% 0
+
+    +media-query(tablet_plus)
+        background-position: 100% 0
 
     .container
         @extend %flex
         justify-content: space-between
         @extend %relative
+        padding: 0
+        margin: 0
+
+        +media-query(tablet) 
+            padding: 0 15px
+            margin: 0 auto
 
         h1 
             width: 520px
@@ -42,6 +51,9 @@ header
         max-width: 480px
         width: 100%
         padding-top: 50px
+
+        +media-query(tablet) 
+            padding-left: 15px
     
     .header__details
         background-color: $trans-yellow
