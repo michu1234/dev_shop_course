@@ -6,10 +6,23 @@
         font-size: 4.2rem
 
     &__person
-        @extend %flex
         font-family: "Lato-Light"
+        text-align: center
+
+        +media-query(tablet) 
+            text-align: left
+            display: flex
+
 
     &__description
+        @extend %flex
+        flex-direction: column
+        justify-content: center
+
+
+        +media-query(tablet) 
+            padding-left: 40px
+
 
         h3 
             font-size: 2.4rem

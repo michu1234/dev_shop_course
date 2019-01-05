@@ -478,7 +478,7 @@ template {
   content: '\f1fe'; }
 
 /* '' */
-.about__details, .benefits__items, .benefits__icon, header .container, header .header__details .header__price, .social__testimonials, .stats .container, .summary__details, .summary__price, .teachers__person {
+.benefits__items, .benefits__icon, header .container, header .header__details .header__price, .social__testimonials, .stats .container, .summary__details, .summary__price, .teachers__description {
   display: flex; }
 
 header .header__details, header .header__details span {
@@ -544,7 +544,7 @@ p {
   margin: 0 auto;
   padding: 0 15px; }
 
-.about__details, .benefits__items, .benefits__icon, header .container, header .header__details .header__price, .social__testimonials, .stats .container, .summary__details, .summary__price, .teachers__person {
+.benefits__items, .benefits__icon, header .container, header .header__details .header__price, .social__testimonials, .stats .container, .summary__details, .summary__price, .teachers__description {
   display: flex; }
 
 header .header__details, header .header__details span {
@@ -556,7 +556,7 @@ header .container {
 .btn {
   cursor: pointer; }
 
-.about__details, .benefits__items, .benefits__icon, header .container, header .header__details .header__price, .social__testimonials, .stats .container, .summary__details, .summary__price, .teachers__person {
+.benefits__items, .benefits__icon, header .container, header .header__details .header__price, .social__testimonials, .stats .container, .summary__details, .summary__price, .teachers__description {
   display: flex; }
 
 header .header__details, header .header__details span {
@@ -600,24 +600,31 @@ header .container {
 
 .about {
   padding-top: 70px;
-  padding-bottom: 150px; }
+  padding-bottom: 50px; }
   .about h2 {
     text-align: center;
     font-size: 4.2rem; }
   .about__details {
-    padding: 70px 0 70px 0; }
+    display: block;
+    padding: 40px 0 20px 0; }
+    @media screen and (min-width: 768px) {
+      .about__details {
+        display: flex; } }
   .about__description {
     font-size: 2rem;
-    padding: 20px;
     line-height: 3.2rem;
     font-family: "Lato-Light";
-    padding-left: 50px;
-    max-width: 345px;
+    padding: 20px 0 0 50px;
     width: 100%; }
+    @media screen and (min-width: 768px) {
+      .about__description {
+        max-width: 345px;
+        width: 100%; } }
   .about__score {
     font-family: "Lato-Light";
     font-size: 2rem;
-    font-weight: 300; }
+    font-weight: 300;
+    padding: 20px; }
 
 .benefits {
   text-align: center;
@@ -663,7 +670,7 @@ header {
     justify-content: space-between;
     padding: 0;
     margin: 0; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1370px) {
       header .container {
         padding: 0 15px;
         margin: 0 auto; } }
@@ -712,6 +719,9 @@ header {
     left: 50%;
     box-shadow: 1px 1px 55px rgba(0, 0, 0, 0.35);
     line-height: 3.2rem; }
+    @media screen and (min-width: 1370px) {
+      header .header__details {
+        left: calc(50% + 15px); } }
     header .header__details span {
       color: #ffffff;
       font-size: 3.5rem;
@@ -736,7 +746,9 @@ header {
       align-items: center; }
 
 .social {
-  padding: 70px 0; }
+  padding: 70px 0;
+  background-image: url("asset8.ff9381cb.jpeg");
+  background-attachment: fixed; }
   .social h3 {
     text-align: center;
     font-size: 4.2rem; }
@@ -758,8 +770,8 @@ header {
 
 .stats {
   text-align: center;
-  background-color: #f8d800;
-  padding: 70px 0; }
+  background: linear-gradient(to bottom, #f8d800 0%, #ffc300 100%);
+  padding: 60px 0; }
   .stats h3 {
     font-size: 2.8rem;
     font-family: "Lato"; }
@@ -769,6 +781,11 @@ header {
     font-size: 2rem; }
   .stats i {
     font-size: 5.6rem; }
+  .stats .container {
+    flex-direction: column; }
+    @media screen and (min-width: 576px) {
+      .stats .container {
+        flex-direction: row; } }
 
 .summary {
   background-color: #f8d800;
@@ -823,12 +840,23 @@ header {
     text-align: center;
     font-size: 4.2rem; }
   .teachers__person {
-    font-family: "Lato-Light"; }
-  .teachers__description h3 {
-    font-size: 2.4rem;
-    font-weight: 300;
-    color: #f8c100; }
-  .teachers__description p {
-    font-size: 1.8rem;
-    line-height: 2.9rem;
-    color: #6a6a6a; }
+    font-family: "Lato-Light";
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      .teachers__person {
+        text-align: left;
+        display: flex; } }
+  .teachers__description {
+    flex-direction: column;
+    justify-content: center; }
+    @media screen and (min-width: 768px) {
+      .teachers__description {
+        padding-left: 40px; } }
+    .teachers__description h3 {
+      font-size: 2.4rem;
+      font-weight: 300;
+      color: #f8c100; }
+    .teachers__description p {
+      font-size: 1.8rem;
+      line-height: 2.9rem;
+      color: #6a6a6a; }
