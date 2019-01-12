@@ -478,7 +478,7 @@ template {
   content: '\f1fe'; }
 
 /* '' */
-.benefits__items, .benefits__icon, header .header__details .header__price, .social__testimonials, .stats .container, .summary__details, .summary__price, .teachers__description {
+.benefits__items, header .header__details .header__price, .social__testimonials, .stats .container, .summary__details, .summary__price, .teachers__description {
   display: flex; }
 
 header ::after, header .header__details ::after, header .header__details::before, header .header__details span {
@@ -487,7 +487,7 @@ header ::after, header .header__details ::after, header .header__details::before
 header .container, header .header__details {
   position: relative; }
 
-.btn {
+.btn, .benefits__icon {
   cursor: pointer; }
 
 @font-face {
@@ -599,7 +599,7 @@ p {
   margin: 0 auto;
   padding: 0 15px; }
 
-.benefits__items, .benefits__icon, header .header__details .header__price, .social__testimonials, .stats .container, .summary__details, .summary__price, .teachers__description {
+.benefits__items, header .header__details .header__price, .social__testimonials, .stats .container, .summary__details, .summary__price, .teachers__description {
   display: flex; }
 
 header ::after, header .header__details ::after, header .header__details::before, header .header__details span {
@@ -608,10 +608,10 @@ header ::after, header .header__details ::after, header .header__details::before
 header .container, header .header__details {
   position: relative; }
 
-.btn {
+.btn, .benefits__icon {
   cursor: pointer; }
 
-.benefits__items, .benefits__icon, header .header__details .header__price, .social__testimonials, .stats .container, .summary__details, .summary__price, .teachers__description {
+.benefits__items, header .header__details .header__price, .social__testimonials, .stats .container, .summary__details, .summary__price, .teachers__description {
   display: flex; }
 
 header ::after, header .header__details ::after, header .header__details::before, header .header__details span {
@@ -620,7 +620,7 @@ header ::after, header .header__details ::after, header .header__details::before
 header .container, header .header__details {
   position: relative; }
 
-.btn {
+.btn, .benefits__icon {
   cursor: pointer; }
 
 .btn {
@@ -700,18 +700,26 @@ header .container, header .header__details {
   .benefits h4 {
     font-size: 2.8rem; }
   .benefits__icon {
-    width: 120px;
-    height: 120px;
+    width: 198px;
+    height: 198px;
     margin: 0 auto;
-    border-radius: 50%;
-    background-color: #f8d800;
+    border-radius: 9%;
+    background-color: #d554ff17;
+    filter: hue-rotate(839deg);
     font-size: 5.2rem;
     justify-content: center;
     align-items: center;
-    color: #ffffff; }
+    box-shadow: 0 0 81px #00000021;
+    color: #ffffff;
+    transition: all .3s; }
+    .benefits__icon:hover {
+      transform: scale(1.3);
+      transition: all .3s; }
     .benefits__icon i::before {
       margin-left: -2px;
       padding: 0; }
+    .benefits__icon img {
+      padding-top: 44px; }
 
 header {
   background-image: url("women.95abbc42.jpg");
@@ -882,6 +890,8 @@ header {
     font-size: 2rem; }
   .stats i {
     font-size: 5.6rem; }
+  .stats img {
+    filter: hue-rotate(839deg); }
   .stats .container {
     flex-direction: column; }
     @media screen and (min-width: 576px) {
