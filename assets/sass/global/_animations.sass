@@ -1,0 +1,53 @@
+$color: #FFD6BF
+$scale-factor: 0.3
+$size: 200px
+    
+@keyframes rotateEl
+    0% 
+        transform: rotate(0)
+    50%
+        transform: rotate(180deg) scale(1.3)
+        border-radius: 50%
+    75%
+        border-radius: 70%
+    75%
+        border-radius: 35%
+    100% 
+        transform: rotate(360deg) scale(1)
+        border-radius: 10px
+
+
+@keyframes blurEl
+    0%
+        filter: blur(0)
+    14%
+        filter: blur(10px)
+    28%
+        filter: blur(50px)
+    42%
+        filter: blur(100px)
+    70%
+        filter: blur(10px)
+
+@keyframes quashingEl
+    0%
+        transform: translate(0)
+        filter: blur(3px)
+        mix-blend-mode: darken
+    14%
+        transform: translate(10px, 100px) rotate(10deg)
+        border-radius: 10%
+    28%
+        transform: translate(200px, 200px) scale(7) rotate(100deg)
+        border-radius: 20%
+    42%
+        transform: translate(800px, 400px)
+        border-radius: 35%
+    70%
+        transform: translate(300px, 800px) scale(1) rotate(140deg)
+        border-radius: 22%
+        opacity: 1
+    100%
+        transform: translate(10px, 20px) scale(2) rotate(10deg)
+        border-radius: 30%
+        opacity: 0
