@@ -541,9 +541,12 @@ p {
 @keyframes rotateEl {
   0% {
     transform: rotate(0); }
+  25% {
+    border-radius: 22%; }
   50% {
     transform: rotate(180deg) scale(1.3);
-    border-radius: 50%; }
+    border-radius: 50%;
+    width: 110%; }
   75% {
     border-radius: 70%; }
   75% {
@@ -733,7 +736,7 @@ header {
     background: #f8d800;
     z-index: 1;
     mix-blend-mode: darken;
-    animation: quashingEl 30s linear infinite; }
+    animation: quashingEl 30s ease-in-out infinite; }
   @media screen and (min-width: 930px) {
     header {
       background-position: 100% 0; } }
@@ -879,19 +882,19 @@ header {
 
 .stats {
   text-align: center;
-  background: linear-gradient(to bottom, #f8d800 0%, #ffc300 100%);
+  background: linear-gradient(to bottom, #E8F2FE 0%, #ffffff 66%);
   padding: 60px 0; }
   .stats h3 {
     font-size: 2.8rem;
     font-family: "Lato"; }
   .stats p {
-    color: #ffffff;
+    color: #bdbdbd;
     font-weight: 300;
     font-size: 2rem; }
   .stats i {
     font-size: 5.6rem; }
   .stats img {
-    filter: hue-rotate(839deg); }
+    filter: grayscale(100%); }
   .stats .container {
     flex-direction: column; }
     @media screen and (min-width: 576px) {
@@ -955,6 +958,11 @@ header {
   .teachers__person {
     font-family: "Lato-Light";
     text-align: center; }
+    .teachers__person img {
+      max-width: 100%; }
+      @media screen and (min-width: 768px) {
+        .teachers__person img {
+          max-width: 200px; } }
     @media screen and (min-width: 768px) {
       .teachers__person {
         text-align: left;
@@ -964,7 +972,8 @@ header {
     justify-content: center; }
     @media screen and (min-width: 768px) {
       .teachers__description {
-        padding-left: 40px; } }
+        padding-left: 40px;
+        padding-right: 40px; } }
     .teachers__description h3 {
       font-size: 2.4rem;
       font-weight: 300;

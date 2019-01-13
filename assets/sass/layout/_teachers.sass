@@ -9,6 +9,12 @@
         font-family: "Lato-Light"
         text-align: center
 
+        img 
+            max-width: 100%
+
+            +media-query(tablet) 
+                max-width: 200px
+
         +media-query(tablet) 
             text-align: left
             display: flex
@@ -22,6 +28,7 @@
 
         +media-query(tablet) 
             padding-left: 40px
+            padding-right: 40px
 
 
         h3 
