@@ -859,7 +859,8 @@ header {
 
 .social {
   padding: 70px 0;
-  background-image: url("asset8.ff9381cb.jpeg");
+  background-color: #ffffff;
+  background-image: url("Subtle-Stripes.301fb4f9.svg");
   background-attachment: fixed; }
   .social h3 {
     text-align: center;
@@ -902,7 +903,9 @@ header {
         flex-direction: row; } }
 
 .summary {
-  background-color: #f8d800;
+  background-image: url("Liquid-Cheese.25bf52ce.svg");
+  background-attachment: fixed;
+  background-size: cover;
   padding: 80px 0; }
   .summary h5 {
     font-size: 1.8rem;
@@ -951,7 +954,10 @@ header {
     align-items: center; }
 
 .teachers {
-  padding: 60px 0; }
+  padding: 60px 0;
+  background-color: #f0f0f0;
+  background-image: url("Confetti-Doodles.6376bcf3.svg");
+  background-attachment: fixed; }
   .teachers h2 {
     text-align: center;
     font-size: 4.2rem; }
