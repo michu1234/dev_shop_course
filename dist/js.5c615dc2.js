@@ -865,7 +865,7 @@ if ("development" !== 'production') {
     }
   };
 }
-},{}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/process/browser.js":[function(require,module,exports) {
+},{}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/node_modules/process/browser.js":[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {}; // cached from whatever global is present so that test runners that stub it
@@ -1245,7 +1245,7 @@ var getFrameData = function () {
 exports.getFrameData = getFrameData;
 var _default = sync;
 exports.default = _default;
-},{"hey-listen":"node_modules/hey-listen/dist/hey-listen.es.js","process":"../../AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/process/browser.js"}],"node_modules/@popmotion/easing/dist/easing.es.js":[function(require,module,exports) {
+},{"hey-listen":"node_modules/hey-listen/dist/hey-listen.es.js","process":"../../../../../../usr/local/lib/node_modules/parcel-bundler/node_modules/process/browser.js"}],"node_modules/@popmotion/easing/dist/easing.es.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4441,7 +4441,7 @@ var svg = function (element, props) {
 };
 
 exports.svg = svg;
-},{"tslib":"node_modules/tslib/tslib.es6.js","@popmotion/popcorn":"node_modules/@popmotion/popcorn/dist/popcorn.es.js","framesync":"node_modules/framesync/dist/framesync.es.js","style-value-types":"node_modules/style-value-types/dist/style-value-types.es.js","hey-listen":"node_modules/hey-listen/dist/hey-listen.es.js","@popmotion/easing":"node_modules/@popmotion/easing/dist/easing.es.js","stylefire":"node_modules/stylefire/dist/stylefire.es.js","process":"../../AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/process/browser.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"tslib":"node_modules/tslib/tslib.es6.js","@popmotion/popcorn":"node_modules/@popmotion/popcorn/dist/popcorn.es.js","framesync":"node_modules/framesync/dist/framesync.es.js","style-value-types":"node_modules/style-value-types/dist/style-value-types.es.js","hey-listen":"node_modules/hey-listen/dist/hey-listen.es.js","@popmotion/easing":"node_modules/@popmotion/easing/dist/easing.es.js","stylefire":"node_modules/stylefire/dist/stylefire.es.js","process":"../../../../../../usr/local/lib/node_modules/parcel-bundler/node_modules/process/browser.js"}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -4473,7 +4473,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -4508,12 +4508,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"assets/sass/main.sass":[function(require,module,exports) {
+},{"./bundle-url":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"assets/sass/main.sass":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\font\\fontello.eot":[["fontello.5ba468ce.eot","assets/font/fontello.eot"],"assets/font/fontello.eot"],"./..\\font\\fontello.woff2":[["fontello.50cd5947.woff2","assets/font/fontello.woff2"],"assets/font/fontello.woff2"],"./..\\font\\fontello.woff":[["fontello.871433a6.woff","assets/font/fontello.woff"],"assets/font/fontello.woff"],"./..\\font\\fontello.ttf":[["fontello.8c712a45.ttf","assets/font/fontello.ttf"],"assets/font/fontello.ttf"],"./..\\font\\fontello.svg":[["fontello.caa62654.svg","assets/font/fontello.svg"],"assets/font/fontello.svg"],"./..\\font\\Lato-Regular.ttf":[["Lato-Regular.3f67b3af.ttf","assets/font/Lato-Regular.ttf"],"assets/font/Lato-Regular.ttf"],"./..\\font\\Lato-Bold.ttf":[["Lato-Bold.4e9c1c36.ttf","assets/font/Lato-Bold.ttf"],"assets/font/Lato-Bold.ttf"],"./..\\font\\Lato-Light.ttf":[["Lato-Light.63c34893.ttf","assets/font/Lato-Light.ttf"],"assets/font/Lato-Light.ttf"],"./..\\font\\DancingScript-Regular.ttf":[["DancingScript-Regular.07d43a9f.ttf","assets/font/DancingScript-Regular.ttf"],"assets/font/DancingScript-Regular.ttf"],"./..\\img\\women_2.jpg":[["women_2.171c55bc.jpg","assets/img/women_2.jpg"],"assets/img/women_2.jpg"],"./..\\img\\women.jpg":[["women.95abbc42.jpg","assets/img/women.jpg"],"assets/img/women.jpg"],"./..\\img\\mark.png":[["mark.8af38237.png","assets/img/mark.png"],"assets/img/mark.png"],"./..\\img\\Subtle-Stripes.svg":[["Subtle-Stripes.301fb4f9.svg","assets/img/Subtle-Stripes.svg"],"assets/img/Subtle-Stripes.svg"],"./..\\img\\Liquid-Cheese.svg":[["Liquid-Cheese.25bf52ce.svg","assets/img/Liquid-Cheese.svg"],"assets/img/Liquid-Cheese.svg"],"./..\\img\\Confetti-Doodles.svg":[["Confetti-Doodles.6376bcf3.svg","assets/img/Confetti-Doodles.svg"],"assets/img/Confetti-Doodles.svg"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/debucsser/debucsser.js":[function(require,module,exports) {
+},{"./../font/fontello.eot":[["fontello.5ba468ce.eot","assets/font/fontello.eot"],"assets/font/fontello.eot"],"./../font/fontello.woff2":[["fontello.50cd5947.woff2","assets/font/fontello.woff2"],"assets/font/fontello.woff2"],"./../font/fontello.woff":[["fontello.871433a6.woff","assets/font/fontello.woff"],"assets/font/fontello.woff"],"./../font/fontello.ttf":[["fontello.8c712a45.ttf","assets/font/fontello.ttf"],"assets/font/fontello.ttf"],"./../font/fontello.svg":[["fontello.caa62654.svg","assets/font/fontello.svg"],"assets/font/fontello.svg"],"./../font/Lato-Regular.ttf":[["Lato-Regular.3f67b3af.ttf","assets/font/Lato-Regular.ttf"],"assets/font/Lato-Regular.ttf"],"./../font/Lato-Bold.ttf":[["Lato-Bold.4e9c1c36.ttf","assets/font/Lato-Bold.ttf"],"assets/font/Lato-Bold.ttf"],"./../font/Lato-Light.ttf":[["Lato-Light.63c34893.ttf","assets/font/Lato-Light.ttf"],"assets/font/Lato-Light.ttf"],"./../font/DancingScript-Regular.ttf":[["DancingScript-Regular.07d43a9f.ttf","assets/font/DancingScript-Regular.ttf"],"assets/font/DancingScript-Regular.ttf"],"./../img/women_2.jpg":[["women_2.171c55bc.jpg","assets/img/women_2.jpg"],"assets/img/women_2.jpg"],"./../img/women.jpg":[["women.95abbc42.jpg","assets/img/women.jpg"],"assets/img/women.jpg"],"./../img/mark.png":[["mark.8af38237.png","assets/img/mark.png"],"assets/img/mark.png"],"./../img/Subtle-Stripes.svg":[["Subtle-Stripes.301fb4f9.svg","assets/img/Subtle-Stripes.svg"],"assets/img/Subtle-Stripes.svg"],"./../img/Liquid-Cheese.svg":[["Liquid-Cheese.25bf52ce.svg","assets/img/Liquid-Cheese.svg"],"assets/img/Liquid-Cheese.svg"],"./../img/Confetti-Doodles.svg":[["Confetti-Doodles.6376bcf3.svg","assets/img/Confetti-Doodles.svg"],"assets/img/Confetti-Doodles.svg"],"_css_loader":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/debucsser/debucsser.js":[function(require,module,exports) {
 var global = arguments[3];
 "use strict";
 
@@ -4683,7 +4683,7 @@ var config = {
 
 };
 var debug = new _debucsser.default(config).init();
-},{"popmotion":"node_modules/popmotion/dist/popmotion.es.js","../sass/main.sass":"assets/sass/main.sass","debucsser":"node_modules/debucsser/debucsser.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"popmotion":"node_modules/popmotion/dist/popmotion.es.js","../sass/main.sass":"assets/sass/main.sass","debucsser":"node_modules/debucsser/debucsser.js"}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -4710,7 +4710,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53868" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54125" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
@@ -4852,5 +4852,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},["../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","assets/js/index.js"], null)
+},{}]},{},["../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","assets/js/index.js"], null)
 //# sourceMappingURL=/js.5c615dc2.map
