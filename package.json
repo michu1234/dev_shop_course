@@ -9,8 +9,10 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "parcel": "^1.11.0",
     "parcel-bundler": "^1.11.0",
-    "pug": "^2.0.3"
+    "pug": "^2.0.3",
+    "sass": "^1.16.1"
   },
   "dependencies": {
     "debucsser": "^1.0.4",
